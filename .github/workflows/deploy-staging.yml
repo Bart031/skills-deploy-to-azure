@@ -1,0 +1,26 @@
+name: Stage the app
+
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello world
+      run: echo 'hello world'
+
+  Build-Docker-Image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello world
+      run: echo 'hello world' 
+
+  Deploy-to-Azure:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello world
+      run: echo 'hello world'
+
+  
